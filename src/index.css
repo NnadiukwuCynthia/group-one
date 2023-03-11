@@ -2,8 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --primary-clr: #197EF2;
+  --neutral-clr: #7C7E80;
+  --black-clr: #1E1717;
+  --white-clr: #FbF4F4;
+  --error-clr: #FA0724;
+  --success-clr: #01A830;
+  --btn-enabled-clr: #6500FF;
+  --btn-hover-clr: #003E9C;
+  --btn-clicked-clr: #003E9C;
+  --btn-disabled-clr: #6BA6FF;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: " Rubik" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
