@@ -1,11 +1,21 @@
+// different screen/devices
 $Phone-width:  500px;
 $tablet-width:  768px;
 $desktop-width:  1024px;
 
+// tailwind config
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+/*
+===============
+Variables
+===============
+*/
 
 :root{
   --primary-clr: #197EF2;
@@ -34,3 +44,10 @@ body {
       monospace;
   }
   
+  // small screen
+  @media screen and (max-width:#{$phone-width}) {
+    
+  }
+  @media screen and (max-width:#{$tablet-width}) {
+    
+  }
