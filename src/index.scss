@@ -62,11 +62,10 @@ a {
   code {
      font-family: " Rubik" sans-serif;
   }
-@media screen and (max-width:#{$phone-width}) {
-        
+  //small screen
+@media screen and(max-width:#{$phone-width}) {     
 }
-@media screen and (max-width:#{$tablet-width}) {
-        
+@media screen and(max-width:#{$tablet-width}) {       
 }
 
   
