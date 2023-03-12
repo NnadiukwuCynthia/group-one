@@ -1,20 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-:root {
-  --primary-clr: #197EF2;
-  --neutral-clr: #7C7E80;
-  --black-clr: #1E1717;
-  --white-clr: #FbF4F4;
-  --error-clr: #FA0724;
-  --success-clr: #01A830;
-  --btn-enabled-clr: #6500FF;
-  --btn-hover-clr: #003E9C;
-  --btn-clicked-clr: #003E9C;
-  --btn-disabled-clr: #6BA6FF;
-}
+@tailwind utilities; */
 
+:root {
+  --menu-bgc: #e6f0ff;
+  --menu-active-clr: #003e9c;
+  --menuList-clr: #6ba6ff;
+  --Header-bgc: #fffefe;
+  --userInfo-clr: #6b788e;
+  --primary-clr: #197ef2;
+  --neutral-clr: #7c7e80;
+  --black-clr: #1e1717;
+  --white-clr: #fbf4f4;
+  --error-clr: #fa0724;
+  --success-clr: #01a830;
+  --btn-enabled-clr: #6500ff;
+  --btn-hover-clr: #003e9c;
+  --btn-clicked-clr: #003e9c;
+  --btn-disabled-clr: #6ba6ff;
+}
+* {
+  list-style: none;
+  text-decoration: unset;
+}
 body {
   margin: 0;
   padding: 0;
@@ -24,5 +33,102 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}/*# sourceMappingURL=index.css.map */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} /*# sourceMappingURL=index.css.map */
+
+.MenuDiv {
+  background-color: var(--menu-bgc);
+  width: 192px;
+  height: 1008px;
+  padding-top: 100px;
+}
+.listItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 5px 0 5px;
+  color: var(--menuList-clr);
+  font-family: "Rubik" sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18.96px;
+}
+.listItem span {
+  padding-left: 10px;
+}
+.listItem:active {
+  color: var(--menu-active-clr);
+}
+.adminDiv {
+  height: 83px;
+  width: 1218px;
+  left: 19px;
+  top: 26px;
+  border-radius: 8px;
+  background-color: var(--Header-bgc);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  box-shadow: 1px 1px 5px lightgray;
+}
+.logo {
+  padding: 10px 0 0 10px;
+}
+.UserDiv {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userContent {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchInp {
+  width: 500px;
+  height: 40px;
+  border: 1px solid #6ba6ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.searchInp::placeholder {
+  color: var(--menuList-clr);
+  font-family: "Rubik" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.menuIcon {
+  color: var(--menuList-clr);
+  font-size: 25px;
+}
+.notify {
+  color: var(--menuList-clr);
+  font-size: 20px;
+}
+.setting {
+  background-color: var(--white-clr);
+  border-radius: 50%;
+}
+.userName {
+  color: var(--menuList-clr);
+  font-family: "Rubik" sans-serif;
+  font-size: 16px;
+}
+.userRole {
+  color: var(--userInfo-clr);
+  font-style: Medium;
+  font-family: "Rubik" sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.Page {
+  display: flex;
+}
+.Body {
+  margin-top: 200px;
+}

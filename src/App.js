@@ -1,7 +1,12 @@
 import "./App.css";
+import HeaderBar from "./Components/HeaderBar";
 
 function App() {
-  return <> Hello World</>;
+  return (
+    <>
+      <HeaderBar />
+    </>
+  );
 }
 
 export default App;
