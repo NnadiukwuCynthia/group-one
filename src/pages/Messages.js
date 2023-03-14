@@ -1,9 +1,10 @@
 import React from "react";
+import HeaderBar from "../Components/HeaderBar";
 
 const Messages = () => {
   return (
     <>
-      <h1>MESSAGES</h1>
+      <HeaderBar />
     </>
   );
 };

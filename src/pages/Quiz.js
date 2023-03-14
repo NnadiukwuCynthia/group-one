@@ -1,9 +1,10 @@
 import React from "react";
+import HeaderBar from "../Components/HeaderBar";
 
 const Quiz = () => {
   return (
     <>
-      <h1>QUIZ</h1>
+      <HeaderBar />
     </>
   );
 };

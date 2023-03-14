@@ -1,9 +1,10 @@
 import React from "react";
+import HeaderBar from "../Components/HeaderBar";
 
 const Students = () => {
   return (
     <>
-      <h1>STUDENTS</h1>
+      <HeaderBar />
     </>
   );
 };
