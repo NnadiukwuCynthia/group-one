@@ -1,12 +1,7 @@
 import React from "react";
-import HeaderBar from "../Components/HeaderBar";
 
 const Messages = () => {
-  return (
-    <>
-      <HeaderBar />
-    </>
-  );
+  return <>Messages</>;
 };
 
 export default Messages;

@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderBar from "../Components/HeaderBar";
 import CourseData from "../Components/CourseData";
 import "../index.css";
 import { FaDollarSign, FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -7,7 +6,6 @@ import { FaDollarSign, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const Courses = () => {
   return (
     <>
-      <HeaderBar />
       <div className="courseDiv">
         {CourseData.map((eachCourse, index) => {
           const { Photo, Course, Date, Price, Level, Duration, Modules } =

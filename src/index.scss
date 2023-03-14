@@ -4,9 +4,9 @@ $tablet-width:  768px;
 $desktop-width:  1024px;
 
 // tailwind config
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 // font family
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
@@ -137,9 +137,9 @@ body {
     display: flex;
   }
   // small screen
-  @media screen and (max-width:#{$phone-width}) {
+  // @media screen and (max-width:#{$phone-width}) {
     
-  }
-  @media screen and (max-width:#{$tablet-width}) {
+  // }
+  // @media screen and (max-width:#{$tablet-width}) {
     
-  }
+  // }

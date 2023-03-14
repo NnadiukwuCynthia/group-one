@@ -1,12 +1,7 @@
 import React from "react";
-import HeaderBar from "../Components/HeaderBar";
 
 const Quiz = () => {
-  return (
-    <>
-      <HeaderBar />
-    </>
-  );
+  return <>Quiz</>;
 };
 
 export default Quiz;

@@ -1,13 +1,11 @@
 import React from "react";
 import PaymentList from "../Components/PaymentData";
-import HeaderBar from "../Components/HeaderBar";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Payments = () => {
   return (
     <>
-      <HeaderBar />
-      <div>
+      <div className="paymentDiv">
         {PaymentList.map((eachPayment, index) => {
           const { Name, Course, Invoice, Price, Status, Date, Dollar, Photo } =
             eachPayment;

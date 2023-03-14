@@ -12,9 +12,6 @@ const Studentprogress = ({ name, text, img }) => {
             <p>{name}</p>
             <p>{text}</p>
           </div>
-          <div className="progress">
-            <div className="progressLevel"></div>
-          </div>
         </div>
       </section>
     </>

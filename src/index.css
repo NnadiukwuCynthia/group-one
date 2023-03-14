@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 :root {
   --menu-bgc: #e6f0ff;
@@ -133,12 +133,12 @@ code {
 }
 .Page {
   display: flex;
+  justify-content: space-between;
 }
 .Body {
   margin-top: 130px;
 }
 .courseDiv {
-  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -146,10 +146,10 @@ code {
   flex-wrap: wrap;
 }
 .eachCourse {
-  width: 300px;
+  width: 290px;
   height: 350px;
   margin: 10px 0;
-  border: 0.5px solid var(--neutral-clr);
+  box-shadow: 1px 1px 2px var(--neutral-clr);
   border-radius: 5px;
 }
 .eachCourse img {
@@ -160,25 +160,30 @@ code {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  padding: 0 10px;
+  padding: 20px 10px 10px;
   word-spacing: 5px;
 }
 .date {
   color: var(--neutral-clr);
-  padding: 0 10px;
+  padding: 0 10px 10px;
   font-family: "Rubik", sans-serif;
   font-size: 12px;
+  font-weight: 500;
 }
 .priceDiv {
   display: flex;
-  padding: 0 50px;
+  padding: 0 20px;
   align-items: center;
   justify-content: space-between;
   color: var(--menuList-clr);
   font-size: 12px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
-  padding: 0 5px;
+}
+.priceDiv p {
+  margin: 10px 0 20px;
+  display: flex;
+  align-items: center;
 }
 .modules {
   padding: 0 10px;
@@ -188,7 +193,7 @@ code {
   color: var(--neutral-clr);
 }
 .btnDiv {
-  width: 15%;
+  width: 20%;
   height: 50px;
   margin: auto;
   display: flex;
@@ -205,10 +210,13 @@ code {
 .btnDiv p {
   color: var(--primary-clr);
 }
+.paymentDiv {
+  padding-top: 20px;
+}
 .eachPayment {
-  width: 80%;
+  width: 868px;
   height: 100px;
-  margin: 5px auto 10px;
+  margin: 5px 10em 10px 0;
   padding: 0 20px;
   background-color: var(--payment-clr);
   display: flex;
