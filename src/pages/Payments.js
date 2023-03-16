@@ -11,7 +11,7 @@ const Payments = () => {
             eachPayment;
           return (
             <div key={index} className="eachPayment">
-              <div className="nameDiv">
+              <div className="eachNameDiv">
                 <img src={Photo} alt={Name} />
                 <div className="infoDiv">
                   <p className="name">{Name}</p>

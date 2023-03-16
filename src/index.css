@@ -269,8 +269,8 @@ code {
   font-size: 16px;
 }
 
-.nameDiv {
-  width: 35%;
+.eachNameDiv {
+  width: 43%;
   height: 100px;
   display: flex;
   justify-content: flex-start;
