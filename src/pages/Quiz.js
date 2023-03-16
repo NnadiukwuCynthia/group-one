@@ -11,7 +11,7 @@ const Quiz = () => {
         </div>
         <div className="quizDiv">
           <div className="Quiz-Assignment">
-            <p className="AssignmentText">Assignmets</p>
+            <p className="AssignmentText">Assignments</p>
             <div className="AssignmentContent">
               <div className="eachAssignment">
                 <p className="Assignment">

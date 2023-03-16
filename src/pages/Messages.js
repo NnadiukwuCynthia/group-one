@@ -1,9 +1,8 @@
 import React from "react";
-import { VscCircleSmall } from "react-icons/vsc";
-import { BsBell } from "react-icons/bs";
-import Smith from "../images/smith.png";
+import Message from "../Components/Messages";
+import Smith from "../images/smithBig.png";
 
-const Messages = ({ img, name }) => {
+const Messages = () => {
   return (
     <>
       <section className="dashboardDiv">
@@ -11,98 +10,23 @@ const Messages = ({ img, name }) => {
           <h2 className="quizHeading">Messages</h2>
         </div>
         <div className="quizDiv">
-          <div className="Messages">
-            <div className="SumMessages">
-              <div className="allMessageDiv">
-                <p className="allMessages">All Messages</p>
-                <p className="totalMessages">24</p>
-              </div>
-              <div className="MessageBtn">
-                <button>
-                  <div className="btnIconDiv">
-                    <VscCircleSmall className="icon1" />
-                    <VscCircleSmall className="icon2" />
-                    <VscCircleSmall className="icon3" />
-                  </div>
-                  Mark all as read
-                </button>
-              </div>
+          <Message />
+          <div className="Messages-1">
+            <div className="headingDiv">
+              <img src={Smith} alt="profilePicture" />
+              <p className="profileName">Smith Blacks</p>
             </div>
-            <div className="messageNotification">
-              <p className="messageText">Messages</p>
-              <div className="firstMessage">
-                <img src={Smith} alt="smith" />
-                <div className="name-icon-div">
-                  <p className="messagerName">Smith Blacks</p>
-                  <div className="messageIconDiv">
-                    <BsBell className="messagerIcon" />
-                    <div className="alertNo">
-                      <p>3</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="otherMessages">
-                <img src={Smith} alt="smith" />
-                <div className="name-icon-div">
-                  <p className="messagerName">Adeola Bats</p>
-                  <div className="messageIconDiv">
-                    <BsBell className="messagerIcon" />
-                    <div className="alertNo">
-                      <p>3</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="otherMessages">
-                <img src={Smith} alt="smith" />
-                <div className="name-icon-div">
-                  <p className="messagerName">Ying Toms</p>
-                  <div className="messageIconDiv">
-                    <BsBell className="messagerIcon" />
-                    <div className="alertNo">
-                      <p>3</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="otherMessages">
-                <img src={Smith} alt="smith" />
-                <div className="name-icon-div">
-                  <p className="messagerName">Tailor Hings</p>
-                  <div className="messageIconDiv">
-                    <BsBell className="messagerIcon" />
-                    <div className="alertNo">
-                      <p>3</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="otherMessages">
-                <img src={Smith} alt="smith" />
-                <div className="name-icon-div">
-                  <p className="messagerName">Smith Blacks</p>
-                  <div className="messageIconDiv">
-                    <BsBell className="messagerIcon" />
-                    <div className="alertNo">
-                      <p>3</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="messageBox-1"></div>
+            <div className="box">
+              <div className="messageBox-2"></div>
             </div>
-            <div className="MessagesBtn">
-              <button>
-                <div className="btnIconDiv">
-                  <VscCircleSmall className="icon1" />
-                  <VscCircleSmall className="icon2" />
-                  <VscCircleSmall className="icon3" />
-                </div>
-                View All
-              </button>
-            </div>
+            <div className="messageBox-3"></div>
+            <input
+              type="text"
+              placeholder="Type your Message..."
+              className="messageInp"
+            />
           </div>
-          <div className="Messages"></div>
         </div>
       </section>
     </>

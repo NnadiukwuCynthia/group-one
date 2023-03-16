@@ -18,6 +18,8 @@ Variables
   --payText-clr: #b3b9c4;
   --work-clr: #7A8699;
   --time-clr: #96C0FF;
+  --input-bgc: #DFE2E6;
+  --userChat-bgc: #C2C7D0;
   --primary-clr: #197ef2;
   --neutral-clr: #7c7e80;
   --black-clr: #1e1717;
@@ -769,6 +771,15 @@ code {
   box-shadow: 0 0 3px var(--neutral-clr);
 }
 
+.Messages-1 {
+  height: 509px;
+  width: 500px;
+  left: 216px;
+  top: 272px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px var(--neutral-clr);
+}
+
 .MessageBtn button {
   width: 180px;
   height: 50px;
@@ -927,4 +938,96 @@ code {
   align-items: center;
   justify-content: center;
   color: var(--dashboard-clr);
+}
+
+.headingDiv {
+  height: 118px;
+  width: 500px;
+  left: 733px;
+  top: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px var(--payText-clr);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.profileName {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 30px;
+  color: var(--dashboard-clr);
+}
+
+.messageBox-1 {
+  height: 96px;
+  width: 297px;
+  left: 742px;
+  top: 428px;
+  border-radius: 40px;
+  background-color: var(--userChat-bgc);
+  margin: 20px;
+}
+
+.box {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.messageBox-2 {
+  height: 61px;
+  width: 297px;
+  left: 913px;
+  top: 543px;
+  border-radius: 40px;
+  background-color: var(--input-bgc);
+}
+
+.messageBox-3 {
+  height: 50px;
+  width: 263px;
+  left: 742px;
+  top: 628px;
+  border-radius: 40px;
+  margin-left: 20px;
+  background-color: var(--userChat-bgc);
+}
+
+.messageInp {
+  height: 95px;
+  width: 500px;
+  left: 732px;
+  top: 701px;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 40px;
+  background-color: var(--input-bgc);
+}
+
+.messageInp:focus {
+  outline: none;
+}
+
+.messageInp::-moz-placeholder {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.messageInp::placeholder {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
 }/*# sourceMappingURL=index.css.map */
