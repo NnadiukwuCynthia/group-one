@@ -18,17 +18,26 @@ Variables
 */
 
 :root{
-  --menu-bgc: #E6F0FF;
-  --primary-clr: #197EF2;
-  --neutral-clr: #7C7E80;
-  --black-clr: #1E1717;
-  --white-clr: #FbF4F4;
-  --error-clr: #FA0724;
-  --success-clr: #01A830;
-  --btn-enabled-clr: #6500FF;
-  --btn-hover-clr: #003E9C;
-  --btn-clicked-clr: #003E9C;
-  --btn-disabled-clr: #6BA6FF;
+  --menu-bgc: #e6f0ff;
+  --menu-active-clr: #003e9c;
+  --menuList-clr: #6ba6ff;
+  --Header-bgc: #fffefe;
+  --userInfo-clr: #6b788e;
+  --dashboard-clr: #0065ff;
+  --payment-clr: #f5f6f7;
+  --payText-clr: #b3b9c4;
+  --work-clr: #7A8699;
+  --time-clr: #96C0FF;
+  --primary-clr: #197ef2;
+  --neutral-clr: #7c7e80;
+  --black-clr: #1e1717;
+  --white-clr: #fbf4f4;
+  --error-clr: #fa0724;
+  --success-clr: #01a830;
+  --btn-enabled-clr: #6500ff;
+  --btn-hover-clr: #003e9c;
+  --btn-clicked-clr: #003e9c;
+  --btn-disabled-clr: #6ba6ff;
 }
 //global css
 
@@ -133,8 +142,689 @@ body {
     font-weight: 600;
     font-size: 14px;
   }
-  .page{
+  .Page{
     display: flex;
+    justify-content: space-between;
+  }
+  .Body {
+    margin-top: 130px;
+  }
+  .courseDiv {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .eachCourse {
+    width: 290px;
+    height: 350px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 2px var(--neutral-clr);
+    border-radius: 5px;
+  }
+  .eachCourse img {
+    width: 100%;
+  }
+  .course {
+    color: var(--btn-clicked-clr);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 10px 10px;
+    word-spacing: 5px;
+  }
+  .date {
+    color: var(--neutral-clr);
+    padding: 0 10px 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .priceDiv {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--menuList-clr);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+  }
+  .priceDiv p {
+    margin: 10px 0 20px;
+    display: flex;
+    align-items: center;
+  }
+  .modules {
+    padding: 0 10px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--neutral-clr);
+  }
+  .btnDiv {
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .first,
+  .second {
+    width: 30px;
+    height: 30px;
+  }
+  .prevIcon,
+  .nextIcon,
+  .btnDiv p {
+    color: var(--primary-clr);
+  }
+  .paymentDiv {
+    padding-top: 20px;
+  }
+  .eachPayment {
+    width: 868px;
+    height: 100px;
+    margin: 5px 10em 10px 0;
+    padding: 0 20px;
+    background-color: var(--payment-clr);
+    display: flex;
+    justify-content: space-between;
+  }
+  .amountDiv {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    color: var(--neutral-clr);
+    font-size: 16px;
+  }
+  .nameDiv {
+    width: 35%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .infoDiv {
+    padding-left: 10px;
+  }
+  .name {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: var(--btn-clicked-clr);
+  }
+  .invoice {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    color: var(--payText-clr);
+  }
+  .statusDate {
+    font-family: "Rubik", sans-serif;
+    color: var(--payText-clr);
+    font-size: 16px;
+  }
+  .dashboardDiv {
+    width: 1080px;
+    padding: 0 20px;
+    margin: 0 5rem 0 30px;
+  }
+  .welcomeDiv {
+    height: 112px;
+    width: 1021px;
+    padding: 25px 10px 0;
+    border-radius: 8px;
+    text-transform: capitalize;
+    background-color: var(--dashboard-clr);
+  }
+  .welcome,
+  .taskLevel {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 10px;
+    color: var(--menu-bgc);
+    text-align: left;
+  }
+  .userInfo {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 5px;
+    color: var(--menu-bgc);
+    text-align: left;
+  }
+  .eachProgress {
+    width: 347px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px var(--neutral-clr);
+    padding: 16px 24px 16px 40px;
+    margin-top: 20px;
+  }
+  .nameDiv {
+    width: 90%;
+    height: 45px;
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--btn-disabled-clr);
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexDiv {
+    padding-left: 10px;
+  }
+  .progress {
+    height: 4px;
+    width: 183px;
+    border-radius: 4px;
+    background-color: var(--menu-bgc);
+    margin-bottom: 10px;
+  }
+  .progressLevel {
+    height: 6px;
+    width: 36%;
+    border-radius: 4px;
+    background-color: var(--neutral-clr);
+  }
+  .studentProgress {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .AdeolaprogressLevel {
+    width: 65%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--neutral-clr);
+  }
+  .YingprogressLevel {
+    width: 24%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--neutral-clr);
+  }
+  .TailorprogressLevel {
+    width: 72%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--neutral-clr);
+  }
+  .SmithBlackprogress {
+    width: 45%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--neutral-clr);
+  }
+  .blacksprogress {
+    width: 16%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--neutral-clr);
+  }
+  .ViewBtn button {
+    width: 250px;
+    height: 50px;
+    border: 1px solid var(--dashboard-clr);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dashboard-clr);
+  }
+  .btnIconDiv {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon1,
+  .icon3 {
+    font-size: 18px;
+    color: var(--dashboard-clr);
+  }
+  .icon2 {
+    font-size: 18px;
+    color: var(--btn-disabled-clr);
+  }
+  .progressText {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--btn-clicked-clr);
+  }
+  .icons {
+    width: 200px;
+  }
+  .ViewBtn-1 button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--dashboard-clr);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dashboard-clr);
+  }
+  .Total {
+    height: 84px;
+    width: 347px;
+    left: 0px;
+    top: 184px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px var(--neutral-clr);
+    padding: 16px 24px 16px 24px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .total-course {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--success-clr);
+  }
+  .total-number {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--menu-active-clr);
+  }
+  .total-student {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--dashboard-clr);
+  }
+  .workStat {
+    height: 128px;
+    width: 347px;
+    left: 497px;
+    top: 557px;
+    border-radius: 8px;
+    padding: 16px 5px;
+    margin-top: 10px;
+    background-color: var(--payment-clr);
+  }
+  .Stat {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eachStat {
+    height: 30px;
+    width: 347px;
+    left: 497px;
+    top: 557px;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .workStatTitle {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-hover-clr);
+  }
+  .work {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--work-clr);
+  }
+  .time {
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--time-clr);
+  }
+  .eachArticle {
+    height: 84px;
+    width: 311px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    margin-top: 20px;
+    background-color: var(--payment-clr);
+  }
+  .lessonCourse {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-clr);
+  }
+  .lessonTime {
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-clr);
+  }
+  .LessonImg {
+    /* width: 50px; */
+    display: flex;
+    position: relative;
+  }
+  .img-1 {
+    position: absolute;
+    height: 24px;
+    width: 27px;
+    left: 2px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  .img-2 {
+    position: absolute;
+    height: 24px;
+    width: 27px;
+    left: 12px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  .img-3 {
+    position: absolute;
+    height: 24px;
+    width: 27px;
+    left: 22px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  .img-4 {
+    position: absolute;
+    height: 24px;
+    width: 27px;
+    left: 32px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  .img-5 {
+    position: absolute;
+    height: 24px;
+    width: 27px;
+    left: 42px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  .AnalyseDIv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .quizHeading {
+    font-family: "Rubik";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--menu-bgc);
+  }
+  .Quiz-Assignment {
+    height: 509px;
+    width: 481px;
+    padding: 10px 20px 0;
+    left: 216px;
+    top: 272px;
+    border-radius: 8px;
+    border: 1px solid var(--dashboard-clr);
+  }
+  .quizDiv {
+    margin: 20px 0 0;
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .AssignmentText {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-enabled-clr);
+  }
+  .eachAssignment {
+    width: 90%;
+    margin: 20px 0;
+    text-align: left;
+  }
+  .Assignment {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--menuList-clr);
+  }
+  .toSubmit {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-clicked-clr);
+  }
+  .Score {
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-clicked-clr);
+  }
+  .AssignmentBtn button {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dashboard-clr);
+    color: var(--dashboard-clr);
+  }
+  .quizRecordDiv {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quizRecord {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--menuList-clr);
+  }
+  .Messages {
+    height: 509px;
+    width: 481px;
+    padding: 10px 20px 0;
+    left: 216px;
+    top: 272px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px var(--neutral-clr);
+  }
+  .MessageBtn button {
+    width: 180px;
+    height: 50px;
+    padding: 0 5px;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: 400;
+    border: 1px solid var(--dashboard-clr);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dashboard-clr);
+  }
+  .allMessages {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--dashboard-clr);
+  }
+  .totalMessages {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-clicked-clr);
+  }
+  .SumMessages {
+    height: 84px;
+    width: 347px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    padding: 16px 14px;
+    background-color: var(--Header-bgc);
+    box-shadow: 0 0 2px var(--neutral-clr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .messageText {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-hover-clr);
+    padding-bottom: 20px;
+  }
+  .messageNotification{
+    margin-top: 20px;
+  }
+  .firstMessage{
+    height: 42px;
+    width: 214px;
+    left: 0px;
+    top: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: var(--payment-clr);
+  }
+  .otherMessages{
+    height: 42px;
+    width: 214px;
+    left: 0px;
+    top: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .messagerName{
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-disabled-clr);
+  }
+  .name-icon-div{
+    margin-left: 10px;
+  }
+  .messagerIcon{
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-disabled-clr);
+  }
+  .messageIconDiv{
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    position: relative;
+  }
+  .alertNo{
+    width: 17px;
+    height: 17px;
+    font-family: "Rubik";
+    font-size: 10px;
+    font-weight: 500; 
+    text-align: center;
+    background-color: var(--error-clr);
+    color: var(--menu-bgc);
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 11px
+  }
+  .alertNo p{
+    padding-top: 3px
+  }
+  .MessagesBtn {
+    padding-bottom: 20px;
+  }
+  .MessagesBtn button {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    padding: 0 5px;
+    font-family: "Rubik";
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    border: 1px solid var(--dashboard-clr);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dashboard-clr);
   }
   // small screen
   // @media screen and (max-width:#{$phone-width}) {

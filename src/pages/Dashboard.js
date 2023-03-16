@@ -1,26 +1,25 @@
 import React from "react";
-import Smith from "../images/smith.png";
 import Studentprogress from "../Components/Studentprogress";
+import TotalCourse from "../Components/TotalCourse";
+import Lessons from "../Components/Lessons";
 
 const Dashboard = () => {
   return (
     <>
-      <section>
+      <section className="dashboardDiv">
         <div className="welcomeDiv">
           <p className="welcome">welcome back</p>
           <p className="userInfo">Adams chucks</p>
           <p className="taskLevel">your students completed 74% of the tasks</p>
         </div>
-        <div>
+        <div className="AnalyseDIv">
+          <Studentprogress />
           <div>
-            <Studentprogress name="Smith Blacks" text="36%" img={Smith} />
-            <div className="progress">
-              <div className="progressLevel"></div>
-            </div>
+            <TotalCourse />
           </div>
-
-          <Studentprogress />
-          <Studentprogress />
+          <div>
+            <Lessons />
+          </div>
         </div>
       </section>
     </>

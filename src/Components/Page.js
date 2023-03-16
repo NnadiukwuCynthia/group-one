@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "./Navbar/Menu";
 import Body from "./Body";
+import "../index.css";
 
 const Page = () => {
   return (
