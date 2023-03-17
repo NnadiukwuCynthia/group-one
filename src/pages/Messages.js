@@ -1,10 +1,13 @@
 import React from "react";
 import Message from "../Components/Messages";
 import Smith from "../images/smithBig.png";
+import { AiOutlineSend } from "react-icons/ai";
+import HeaderBar from "../Components/HeaderBar";
 
 const Messages = () => {
   return (
     <>
+      <HeaderBar />
       <section className="dashboardDiv">
         <div className="welcomeDiv">
           <h2 className="quizHeading">Messages</h2>
@@ -26,6 +29,7 @@ const Messages = () => {
               placeholder="Type your Message..."
               className="messageInp"
             />
+            <AiOutlineSend className="sendIcon" />
           </div>
         </div>
       </section>

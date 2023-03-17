@@ -861,8 +861,6 @@ body {
   .messageBox-1{
     height: 96px;
     width: 297px;
-    left: 742px;
-    top: 428px;
     border-radius: 40px;
     background-color: var(--userChat-bgc);
     margin: 20px ;
@@ -875,19 +873,16 @@ body {
   .messageBox-2{
     height: 61px;
     width: 297px;
-    left: 913px;
-    top: 543px;
     border-radius: 40px;
     background-color: var(--input-bgc);
   }
   .messageBox-3{
     height: 50px;
     width: 263px;
-    left: 742px;
-    top: 628px;
     border-radius: 40px;
     margin-left: 20px;
     background-color: var(--userChat-bgc);
+    position: relative;
   }
   .messageInp{
     height: 95px;
@@ -911,6 +906,254 @@ body {
     text-align: left;
 
   }
+  .sendIcon{
+    position: absolute;
+    height: 32px;
+    width: 38px;
+    right: 100px;
+    top: 715px;
+    border-radius: 1px;
+    color: var(--payText-clr);
+  }
+  .WelcomeScreen{
+    height: 910px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/welcome.png");
+    display: flex;
+    justify-content: space-between;
+  }
+  .welcomeSlide{
+    width: 40%;
+    margin-right: 6em;
+    height: 910px;
+    width: 599px;
+    border-radius: 0px;
+    opacity: .8;
+    background-color: var(--black-clr);
+  }
+  .welcomeTextDiv{
+    height: 44px;
+    width: 70%;
+    margin:250px auto 50px;
+
+  }
+  .welcomeHeadingText{
+    font-family: "Rubik", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--Header-bgc);
+}
+  .welcomeText{
+    font-family: " Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--Header-bgc);
+    padding-top: 20px;
+}
+.welcomeBtnDiv{
+    width: 70%;
+    margin: 200px auto 0;
+    position: relative;
+}
+.welcomeBtnDiv button{
+  height: 40px;
+  width: 442px;
+  border-radius: 4px;
+  padding: 7px 32px 12px 32px;
+  background-color: var(--dashboard-clr);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--Header-bgc);
+}
+.homeIcon{
+  height: 16px;
+  width: 16px;
+  left: 130px;
+  top: 10px;
+  border-radius: 0px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--Header-bgc);
+}
+.toLogin{
+  font-family: "Rubik";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+padding-top: 10px;
+text-align: center;
+color: var(--Header-bgc);
+}
+.toLogin a{
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--dashboard-clr);
+}
+.Sign-in-page{
+  width: 100%;
+  height: 910px;
+  background-image: url("./images/signUp.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.name-email, .password-num{
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.signUp-form{
+  height: 537px;
+  width: 681px;
+  border-radius: 8px;
+  padding: 48px 10px;
+  margin: 156px 101px;
+  background-color: var(--Header-bgc);
+}
+.form-input-div{
+height: 17px;
+width: 278px;
+left: 0px;
+top: 80px;
+}
+.labelDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.labelDiv-2, .signUpBtn{
+  padding: 10px 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.inpLabel{
+font-family: "Rubik";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--btn-clicked-clr);
+}
+.details{
+  font-family: "Rubik";
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--dashboard-clr);
+}
+.inpDesc{
+  font-family: "Rubik";
+font-size: 12px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--userChat-bgc);
+}
+.inpDesc-1{
+  font-family: "Rubik";
+font-size: 12px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--userChat-bgc);
+padding:0 40px;
+}
+.signUpInp{
+height: 48px;
+width: 280px;
+border-radius: 4px;
+padding: 12px;
+background-color: var(--payment-clr);
+}
+.signUpInp::placeholder{
+font-family: "Rubik";
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--time-clr);
+}
+.signUpInp:focus{
+  outline: none;
+}
+.inpSignDiv-1, .inpSignDiv-2, .inpSignDiv-3, .inpSignDiv-4{
+  position: relative;
+}
+.userIcon, .showIcon, .mailIcon, .phoneIcon{
+  position: absolute;
+  font-size: 25px;
+  color: var(--time-clr);
+  right: 20px;
+  top: 12px;
+}
+.SelectOption{
+  height: 48px;
+  width: 585px;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px 40px 5px;
+  background-color: var(--payment-clr);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--time-clr);
+}
+.options{
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--time-clr);
+}
+.signUpBtn button{
+  height: 40px;
+  width: 585px;
+  border-radius: 4px;
+  padding: 12px 32px ;
+  color: var( --time-clr);
+  font-size: 16px;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dashboard-clr);
+}
+.signUpIcon{
+  margin: 2px 10px 0;
+}
   // small screen
   // @media screen and (max-width:#{$phone-width}) {
     
