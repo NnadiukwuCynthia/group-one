@@ -1,5 +1,6 @@
 import React from "react";
 import { BiLogIn } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const RoleSelect = () => {
   return (
@@ -19,10 +20,15 @@ const RoleSelect = () => {
         <p className="inpDesc-1">Select your role</p>
         <div className="signUpBtn">
           <button>
-            <BiLogIn className="signUpIcon" />
-            Sign Up
+            <Link to="/dashboard">
+              <BiLogIn className="signUpIcon" />
+              Sign Up
+            </Link>
           </button>
         </div>
+        <p className="toLogin-2">
+          Already have an account! <Link to="/logIn">Log in</Link>
+        </p>
       </div>
     </>
   );

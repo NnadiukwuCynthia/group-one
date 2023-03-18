@@ -28,6 +28,7 @@ Variables
   --payText-clr: #b3b9c4;
   --work-clr: #7A8699;
   --time-clr: #96C0FF;
+  --signUp-clr: #091E42;
   --input-bgc: #DFE2E6;
   --userChat-bgc: #C2C7D0;
   --primary-clr: #197ef2;
@@ -997,10 +998,20 @@ padding-top: 10px;
 text-align: center;
 color: var(--Header-bgc);
 }
-.toLogin a{
-  font-family: "Rubik";
-  font-size: 16px;
-  font-weight: 400;
+.toLogin-2 {
+font-family: "Rubik", sans-serif;
+font-size: 12px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+padding-top: 10px;
+text-align: center;
+color: var(--signUp-clr);
+}
+.toLogin a, .toLogin-2 a{
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
@@ -1030,8 +1041,15 @@ color: var(--Header-bgc);
   width: 681px;
   border-radius: 8px;
   padding: 48px 10px;
-  margin: 156px 101px;
+  margin: 100px 101px;
   background-color: var(--Header-bgc);
+}
+.logoDiv{
+  height: 537px;
+  width: 20%;
+  border-radius: 8px;
+  padding: 48px 10px;
+  margin: 200px auto;
 }
 .form-input-div{
 height: 17px;
@@ -1043,11 +1061,18 @@ top: 80px;
   display: flex;
   justify-content: space-between;
 }
+.labelDiv-1{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 .labelDiv-2, .signUpBtn{
   padding: 10px 40px 0;
   display: flex;
   justify-content: space-between;
 }
+
 .inpLabel{
 font-family: "Rubik";
 font-size: 16px;
@@ -1114,12 +1139,34 @@ color: var(--time-clr);
   right: 20px;
   top: 12px;
 }
+.showIcon-1, .mailIcon-1{
+  position: absolute;
+  font-size: 25px;
+  color: var(--time-clr);
+  right: 40px;
+  top: 12px;
+}
 .SelectOption{
   height: 48px;
   width: 585px;
   border-radius: 4px;
   padding: 12px;
   margin: 10px 40px 5px;
+  background-color: var(--payment-clr);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--time-clr);
+}
+.SelectOption-1{
+  height: 48px;
+  width: 280px;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px auto 5px;
   background-color: var(--payment-clr);
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -1151,8 +1198,96 @@ color: var(--time-clr);
   align-items: center;
   background-color: var(--dashboard-clr);
 }
+.logInBtn button{
+  height: 40px;
+  width: 280px;
+  border-radius: 4px;
+  padding: 12px 32px ;
+  margin: 20px 0 10px;
+  color: var( --time-clr);
+  font-size: 16px;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dashboard-clr);
+}
 .signUpIcon{
   margin: 2px 10px 0;
+}
+.signUpBtn button a{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logInBtn{
+  button a{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.loginMain{
+  display: flex;
+}
+.Login-Page{
+  width: 703px;
+  height: 904px;
+  background-image: url("./images/LoginBg.png");
+  background-position: center;
+  background-size: cover;
+}
+.logInFormPart{
+  width: 703px;
+  height: 904px;
+  padding-left: 20px;
+  background-color: var(--menu-bgc);
+}
+.logIn-form{
+  height: 590px;
+width: 60%;
+margin: 71px auto ;
+border-radius: 8px;
+padding: 48px;
+background-color: var(--Header-bgc);
+}
+.logoDiv-1{
+  display: flex;
+  justify-content: center;
+}
+.newPasswordPage{
+  height: 910px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/PasswordBg.png");
+  display: flex;
+  justify-content: center;
+  padding-top: 225px;
+}
+.newPasswordForm{
+  height: 382px;
+  width: 376px;
+  border-radius: 8px;
+  padding: 48px;
+  background-color: var(--Header-bgc);
+}
+.emailRecoveryText{
+font-family: "Rubik", sans-serif;
+font-size: 10px;
+font-weight: 400;
+padding: 14px;
+color: var(--error-clr);
+}
+.mailIcon-2{
+  position: absolute;
+  font-size: 25px;
+  color: var(--time-clr);
+  right: 10px;
+  top: 12px;
 }
   // small screen
   // @media screen and (max-width:#{$phone-width}) {
