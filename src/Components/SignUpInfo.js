@@ -56,7 +56,7 @@ const SignUpInfo = () => {
           <div className="inpSignDiv-3">
             <input
               className="signUpInp"
-              type="text"
+              type="password"
               placeholder="Enter Password..."
             />
             <p className="inpDesc">Enter a strong password</p>

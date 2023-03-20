@@ -12,28 +12,44 @@ const Menu = () => {
       <div className="MenuDiv">
         <ul>
           <li>
-            <NavLink to="/dashboard" className="listItem">
+            <NavLink
+              to="/dashboard"
+              className="listItem"
+              activeclassName="active"
+            >
               <HiOutlineSquares2X2 /> <span>Dashbord</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/courses" className="listItem">
+            <NavLink
+              to="/courses"
+              className="listItem"
+              activeclassName="active"
+            >
               <FaClipboardList /> <span>Courses</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/students" className="listItem">
+            <NavLink
+              to="/students"
+              className="listItem"
+              activeclassName="active"
+            >
               <FaGraduationCap />
               <span>Students</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/payment" className="listItem">
+            <NavLink
+              to="/payment"
+              className="listItem"
+              activeclassName="active"
+            >
               <FaDollarSign /> <span>Payments</span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/quiz" className="listItem">
+            <NavLink to="/quiz" className="listItem" activeclassName="active">
               <BiCopyAlt />
               <span>
                 Quiz/
@@ -43,7 +59,11 @@ const Menu = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/messages" className="listItem">
+            <NavLink
+              to="/messages"
+              className="listItem"
+              activeclassName="active"
+            >
               <AiFillMessage /> <span>Messages</span>
             </NavLink>
           </li>

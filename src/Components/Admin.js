@@ -5,13 +5,16 @@ import "../index.css";
 import { TbMessageDots } from "react-icons/tb";
 import { BsBell } from "react-icons/bs";
 import { CiSettings } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Admin = () => {
   return (
     <>
       <div className="adminDiv">
         <div>
-          <img src={BlueLogo} alt="logo" className="logo" />
+          <Link to="/welcome">
+            <img src={BlueLogo} alt="logo" className="logo" />
+          </Link>
         </div>
         <div className="userContent">
           <input type="search" placeholder="Search" className="searchInp" />

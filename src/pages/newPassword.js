@@ -35,7 +35,7 @@ const newPassword = () => {
           </div>
           <div className="logInBtn">
             <button>
-              <Link to="/dashboard">
+              <Link to="/logIn">
                 <HiArrowPath className="signUpIcon" />
                 Reset
               </Link>

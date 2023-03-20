@@ -47,13 +47,13 @@ Variables
 body {
     margin: 0;
     padding: 0;
-    font-family: " Rubik" sans-serif;
+    font-family: " Rubik", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
   code {
-    font-family: "Rubik" sans-serif;
+    font-family: "Rubik", sans-serif;
   }
 
   .MenuDiv {
@@ -66,9 +66,10 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 0 0 15px;
+    padding: 10px 0 0 15px;
+    margin-top: 20px;
     color: var(--menuList-clr);
-    font-family: "Rubik" sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 18.96px;
@@ -76,7 +77,12 @@ body {
   .listItem span {
     padding-left: 10px;
   }
-  .listItem:active {
+  .listItem:hover{
+    background-color: var(--menu-active-clr);
+    color: var(--Header-bgc);
+    padding-bottom: 25px;
+  }
+  .active {
     color: var(--menu-active-clr);
   }
   .adminDiv {
@@ -116,7 +122,7 @@ body {
   }
   .searchInp::placeholder {
     color: var(--menuList-clr);
-    font-family: "Rubik" sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -135,13 +141,13 @@ body {
   }
   .userName {
     color: var(--menuList-clr);
-    font-family: "Rubik" sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 16px;
   }
   .userRole {
     color: var(--userInfo-clr);
     font-style: Medium;
-    font-family: "Rubik" sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 600;
     font-size: 14px;
   }
@@ -149,11 +155,9 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .Body {
-    margin-top: 130px;
-  }
   .courseDiv {
-    margin: auto;
+    width: 90%;
+    margin: 8rem auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -225,6 +229,7 @@ body {
     color: var(--primary-clr);
   }
   .paymentDiv {
+    margin-top: 8rem;
     padding-top: 20px;
   }
   .eachPayment {
@@ -273,7 +278,7 @@ body {
   .dashboardDiv {
     width: 1080px;
     padding: 0 20px;
-    margin: 0 5rem 0 30px;
+    margin: 8rem 5rem 0 30px;
   }
   .welcomeDiv {
     height: 112px;
@@ -510,8 +515,8 @@ body {
     left: 0px;
     top: 0px;
     border-radius: 8px;
-    padding: 8px 16px 8px 16px;
-    margin-top: 20px;
+    padding: 8px 16px;
+    margin-top: 10px;
     background-color: var(--payment-clr);
   }
   .lessonCourse {
@@ -523,12 +528,18 @@ body {
     text-align: left;
     color: var(--primary-clr);
   }
+  .upcoming{
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: left;
+    color: var(--btn-clicked-clr);
+  }
   .lessonTime {
     font-family: "Rubik";
     font-size: 12px;
     font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0em;
     text-align: left;
     color: var(--primary-clr);
   }
@@ -905,7 +916,6 @@ body {
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-
   }
   .sendIcon{
     position: absolute;
@@ -939,7 +949,6 @@ body {
     height: 44px;
     width: 70%;
     margin:250px auto 50px;
-
   }
   .welcomeHeadingText{
     font-family: "Rubik", sans-serif;
@@ -1289,6 +1298,51 @@ color: var(--error-clr);
   right: 10px;
   top: 12px;
 }
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border: unset;
+  font-family: "Rubik", sans-serif;
+  color: var(--btn-disabled-clr);
+  line-height: 3em;
+}
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+.react-calendar__tile--now {
+  background: var(--btn-disabled-clr);
+  color: var(--Header-bgc);
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: var(--Header-bgc);
+  color: var(--btn-disabled-clr);
+  box-shadow: 0 0 2px var(--neutral-clr);
+}
+
   // small screen
   // @media screen and (max-width:#{$phone-width}) {
     
