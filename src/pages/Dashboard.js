@@ -5,6 +5,7 @@ import Lessons from "../Components/Lessons";
 import Menu from "../Components/Navbar/Menu";
 import Admin from "../Components/Admin";
 import Calendar from "../Components/calendar";
+import BarChart from "../Components/Barchat";
 
 const Dashboard = () => {
   return (
@@ -30,6 +31,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="AnalyseDIv">
+            <BarChart />
             <Calendar />
           </div>
         </section>

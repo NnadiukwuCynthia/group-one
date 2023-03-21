@@ -1321,13 +1321,6 @@ color: var(--error-clr);
   font-weight: bold;
   font-size: 0.75em;
 }
-.react-calendar__month-view__days__day--weekend {
-  color: #d10000;
-}
-
-.react-calendar__month-view__days__day--neighboringMonth {
-  color: #757575;
-}
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
   background-color: #e6e6e6;
@@ -1342,7 +1335,30 @@ color: var(--error-clr);
   color: var(--btn-disabled-clr);
   box-shadow: 0 0 2px var(--neutral-clr);
 }
-
+.chartHeading{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.chartText{
+font-family: "Rubik";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--btn-hover-clr);
+}
+.chartHeading select{
+font-family:" Rubik";
+font-size: 12px;
+font-weight: bold;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--time-clr);
+background-color: transparent;
+}
   // small screen
   // @media screen and (max-width:#{$phone-width}) {
     
