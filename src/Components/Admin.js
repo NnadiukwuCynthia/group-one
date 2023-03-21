@@ -4,8 +4,9 @@ import User from "../images/Adam.png";
 import "../index.css";
 import { TbMessageDots } from "react-icons/tb";
 import { BsBell } from "react-icons/bs";
-import { CiSettings } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { CiSettings } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 
 const Admin = () => {
   return (
@@ -17,9 +18,16 @@ const Admin = () => {
           </Link>
         </div>
         <div className="userContent">
+          <FiSearch className="searchIcon" />
           <input type="search" placeholder="Search" className="searchInp" />
-          <TbMessageDots className="menuIcon" />
-          <BsBell className="notify" />
+          <div>
+            <TbMessageDots className="menuIcon" />
+            <div className="greenDiv">5</div>
+          </div>
+          <div>
+            <BsBell className="notify" />
+            <div className="redDiv">3</div>
+          </div>
           <div className="UserDiv">
             <div className="imgDiv">
               <img src={User} alt="user" />

@@ -3,6 +3,7 @@ import PaymentList from "../Components/PaymentData";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Menu from "../Components/Navbar/Menu";
 import Admin from "../Components/Admin";
+import { HiChevronUp, HiChevronDown } from "react-icons/hi";
 
 const Payments = () => {
   return (
@@ -11,6 +12,42 @@ const Payments = () => {
       <div className="Page">
         <Menu />
         <div>
+          <div className="courseCont-1">
+            <div className="firstDiv">
+              <p className="firstP">Home/</p>
+              <p className="secondP">Payments</p>
+            </div>
+            <div className="cheveronDiv">
+              <div className="tinyDiv-1">
+                <p>COURSE</p>
+                <div>
+                  <HiChevronUp className="Up-1" />
+                  <HiChevronDown className="Up-1" />
+                </div>
+              </div>
+              <div className="tinyDiv">
+                <p>LEVEL</p>
+                <div>
+                  <HiChevronUp className="Up" />
+                  <HiChevronDown className="Up" />
+                </div>
+              </div>
+              <div className="tinyDiv">
+                <p>DURATION</p>
+                <div>
+                  <HiChevronUp className="Up" />
+                  <HiChevronDown className="Up" />
+                </div>
+              </div>
+              <div className="tinyDiv">
+                <p>ALL</p>
+                <div>
+                  <HiChevronUp className="Up" />
+                  <HiChevronDown className="Up" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="paymentDiv">
             {PaymentList.map((eachPayment, index) => {
               const {

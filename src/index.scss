@@ -118,7 +118,12 @@ body {
     height: 40px;
     border: 1px solid #6ba6ff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
+  }
+  .searchIcon{
+    font-size: 25px;
+    color: var(--btn-disabled-clr);
+    position: absolute;
   }
   .searchInp::placeholder {
     color: var(--menuList-clr);
@@ -130,6 +135,31 @@ body {
   .menuIcon {
     color: var(--menuList-clr);
     font-size: 25px;
+    position: relative;
+  }
+  .redDiv{
+    color: var(--Header-bgc);
+    text-align: center;
+    background-color: var(--error-clr);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    position: absolute;
+    font-weight: 600;
+    top: 23px;
+  }
+  .greenDiv{
+    color: var(--Header-bgc);
+    text-align: center;
+    background-color: var(--success-clr);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 23px; 
   }
   .notify {
     color: var(--menuList-clr);
@@ -157,11 +187,124 @@ body {
   }
   .courseDiv {
     width: 90%;
-    margin: 8rem auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .courseCont{
+    width: 80%;
+    margin: 8rem auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .courseCont-1{
+    width: 85%;
+    margin: 9rem 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .firstDiv{
+    display: flex;
+  }
+  .firstP{
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--time-clr);
+  }
+  .secondP{
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--btn-clicked-clr);
+  }
+  .tinyDiv, .tinyDiv-1{
+    display: flex;
+    align-items: center;
+  }
+  .tinyDiv p{
+    padding-right: 5px;
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--userChat-bgc);
+  }
+  .tinyDiv-1 p{
+    padding-right: 5px;
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--dashboard-clr);
+  }
+  .Up{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--userChat-bgc);
+  }
+  .Up-1{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dashboard-clr);
+  }
+  .cheveronDiv{
+    height: 40px;
+    width: 357px;
+    padding: 8px 0px 8px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FAFBFB;
+  }
+  .studentDiv{
+    width: 90%;
+    margin: 10px auto;
+  }
+  .table{
+    width: 1000px;
+    margin: 20px 0 0 5rem;
+  }
+  .table tr {
+    background-color: var(--payment-clr);
+    text-align: left;
+  }
+  .table tbody td {
+    width: 157px;
+    padding: 10px 20px;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--btn-clicked-clr);
+  }
+  .table thead  tr{
+    height: 46px;
+    width: 897px;
+    padding: 16px 8px 16px 8px;
+    background-color: var(--menu-bgc);
+    margin-bottom: 20px;
+  }
+  .table thead th{
+  font-family: "Rubik";
+  padding: 10px 20px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--btn-disabled-clr);
   }
   .eachCourse {
     width: 290px;
@@ -229,7 +372,7 @@ body {
     color: var(--primary-clr);
   }
   .paymentDiv {
-    margin-top: 8rem;
+    // margin-top: 8rem;
     padding-top: 20px;
   }
   .eachPayment {

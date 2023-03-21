@@ -2,6 +2,7 @@ import React from "react";
 import CourseData from "../Components/CourseData";
 // import "../../index.css";
 import { FaDollarSign, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import Menu from "../Components/Navbar/Menu";
 import Admin from "../Components/Admin";
 
@@ -12,6 +13,42 @@ const Courses = () => {
       <div className="Page">
         <Menu />
         <div>
+          <div className="courseCont">
+            <div className="firstDiv">
+              <p className="firstP">Home/</p>
+              <p className="secondP">Courses</p>
+            </div>
+            <div className="cheveronDiv">
+              <div className="tinyDiv-1">
+                <p>COURSE</p>
+                <div>
+                  <HiChevronUp className="Up-1" />
+                  <HiChevronDown className="Up-1" />
+                </div>
+              </div>
+              <div className="tinyDiv">
+                <p>LEVEL</p>
+                <div>
+                  <HiChevronUp className="Up" />
+                  <HiChevronDown className="Up" />
+                </div>
+              </div>
+              <div className="tinyDiv">
+                <p>DURATION</p>
+                <div>
+                  <HiChevronUp className="Up" />
+                  <HiChevronDown className="Up" />
+                </div>
+              </div>
+              <div className="tinyDiv">
+                <p>ALL</p>
+                <div>
+                  <HiChevronUp className="Up" />
+                  <HiChevronDown className="Up" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="courseDiv">
             {CourseData.map((eachCourse, index) => {
               const { Photo, Course, Date, Price, Level, Duration, Modules } =
