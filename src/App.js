@@ -4,17 +4,17 @@ import React from "react";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 
-import Dashboard from "./pages/dashboard";
-import Courses from "./pages/courses";
-import Messages from "./pages/messages";
-import Payments from "./pages/payments";
-import Quiz from "./pages/quiz";
-import Students from "./pages/students";
-import Welcome from "./pages/welcome";
-import Signup from "./pages/signup";
+import Dashboard from "./pages/Dashboard";
+import Courses from "./pages/Courses";
+import Messages from "./pages/Messages";
+import Payments from "./pages/Payments";
+import Quiz from "./pages/Quiz";
+import Students from "./pages/Students";
+import Welcome from "./pages/Welcome";
+import Signup from "./pages/Signup";
 import LogIn from "./pages/logIn";
 import NewPassword from "./pages/newPassword";
-import NonFound from "./pages/nonfound";
+import NonFound from "./pages/NonFound";
 
 function App() {
   return (
